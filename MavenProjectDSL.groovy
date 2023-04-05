@@ -30,10 +30,6 @@ job('First-Grovy-DSL-SeedJob') {
     triggers {
         scm('* * * * *')
     }
-    // for passing environment variables
-    // environment {
-    //     delete
-    // }
     steps {
         maven('clean package', 'java-tomcat-sample/pom.xml)
     }
@@ -42,4 +38,4 @@ job('First-Grovy-DSL-SeedJob') {
         archiveArtifacts '**/*.war'
     }
 }
-job.getPublishersList().add(new WorkspaceCleanup())
+
