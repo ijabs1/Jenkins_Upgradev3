@@ -11,9 +11,7 @@
     }
     publishers {
         //archive the war file generated
- //       archiveArtifacts '**/*.jar'
- //   }
-//}
+*/
 
 
 
