@@ -7,9 +7,6 @@ job('First-Grovy-DSL-SeedJob') {
         git("https://github.com/ijabs1/Jenkins_Upgradev3.git", 'master')
     }
     // Logrotator
-    options{
-        buildDiscarder(logRotator(numToKeepStr:'1'), logRotator(daysToKeepStr:'7'))
-    }
     triggers {
         scm('* * * * *')
     }
