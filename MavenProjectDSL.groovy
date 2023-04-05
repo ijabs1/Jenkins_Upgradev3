@@ -14,7 +14,7 @@ job('First-Grovy-DSL-SeedJob') {
         scm('* * * * *')
     }
     steps {
-        maven('clean package', 'java-tomcat-sample/pom.xml)
+        maven('clean package', 'java-tomcat-sample/pom.xml')
     }
     publishers {
         //archive the war file generated
