@@ -4,7 +4,7 @@ job('First-Grovy-DSL-SeedJob') {
     scm {
         git("https://github.com/ijabs1/Jenkins_Upgradev3.git", 'master')
     }
-    // Logrotator
+    
     triggers {
         scm('* * * * *')
     }
