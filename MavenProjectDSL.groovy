@@ -17,7 +17,7 @@ job('First-Groovy-DSL-SeedJob') {
         
         //trigger deploy job
         downstream('deploy') {
-            trigger('stable')
+           
         }
     }
 }
