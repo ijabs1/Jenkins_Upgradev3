@@ -18,8 +18,7 @@ job('First-Grovy-DSL-SeedJob') {
     }
     post {
         always {
-            trigger('deploy') {
-            }
+            trigger('deploy') 
         }
     }
 }
