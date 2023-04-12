@@ -10,7 +10,7 @@ job('First-Grovy-DSL-SeedJob') {
     }
     steps {
         maven('clean package', 'java-tomcat-sample/pom.xml')
-        build 'deploy', propagate: true
+        build propagate: true, job: 'deploy'
     }
     publishers {
         //archive the war file generated
