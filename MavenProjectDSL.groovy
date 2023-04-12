@@ -15,11 +15,9 @@ job('First-Groovy-DSL-SeedJob') {
         //archive the war file generated
         archiveArtifacts '**/*.war'
     }
-   publishers {
-        postBuild {
-            success {
-                buildJob("deploy")
-            }
+  postBuildSteps {
+        success {
+            build('deploy')
         }
     }
 }
