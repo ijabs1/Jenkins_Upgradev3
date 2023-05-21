@@ -12,6 +12,9 @@ pipeline {
                 }
             }
         }
+        stage('Build Staging Environment'){
+            build job: 'Freestyle job'
+        }      
        
     }
 }
